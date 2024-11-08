@@ -29,8 +29,9 @@ func main() {
 	}
 
 	config := hugot.FeatureExtractionConfig{
-		ModelPath: modelPath,
-		Name:      "feature-extractor-embeddings",
+		ModelPath:    modelPath,
+		OnnxFilename: "model_O4.onnx",
+		Name:         "feature-extractor-embeddings",
 	}
 
 	pipeline, err := hugot.NewPipeline(session, config)
