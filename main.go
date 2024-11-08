@@ -30,7 +30,7 @@ func main() {
 
 	config := hugot.FeatureExtractionConfig{
 		ModelPath:    modelPath,
-		OnnxFilename: "model_O4.onnx",
+		OnnxFilename: "model.onnx",
 		Name:         "feature-extractor-embeddings",
 	}
 
